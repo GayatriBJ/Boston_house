@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-image: url(https://www.mortgagesolutions.co.uk/wp-content/uploads/sites/1/2021/08/house-prices-scaled.jpg);
+        background-repeat: no-repeat;
+        background-position: 80% 40%;
+        background-size: 1000px
+            }
+    </style>
+</head>
+<body>
+    
+    <b><h1 textalign="centre" style="font-size: 400%;" style="color: rgb(255, 0, 34);">Welcome to House Price</h1></b>
+    <br/><br/>
+    
+    <form method="POST" action="/houseprice_prediction">
+        
+        <b><label>CRIM:</label></b>
+        <input type="text" name="CRIM" size="50" placeholder="per capita crime rate by town"/>
+        <br/><br/>
+        <b><label>ZN:</label></b>
+        <input type="text" name="ZN" size="50" placeholder="proportion of residential land zoned for lots over 25,000 sq.ft."/>
+        <br/><br/>
+        <b><label>INDUS:</label></b>
+        <input type="text" name="INDUS" size="50" placeholder="proportion of non-retail business acres per town."/>
+        <br/><br/>
+        <b><label>NOX:</label></b>
+        <input type="text" name="NOX" size="50" placeholder="nitric oxides concentration"/>
+        <br/><br/>
+        <b><label>RM:</label></b>
+        <input type="text" name="RM" size="50" placeholder=" average number of rooms per dwelling"/>
+        <br/><br/>
+        <b><label>AGE:</label></b>
+        <input type="text" name="AGE" size="50" placeholder="proportion of owner-occupied units built prior to 1940"/>
+        <br/><br/>
+        <b><label>RAD:</label></b>
+        <input type="text" name="RAD" size="50" placeholder=" index of accessibility to radial highways"/>
+        <br/><br/>
+        <b><label>TAX:</label></b>
+        <input type="text" name="TAX" size="50" placeholder="full-value property-tax rate per $10,000"/>
+        <br/><br/>
+        <b><label>PTRATIO:</label></b>
+        <input type="text" name="PTRATIO" size="50" placeholder=" pupil-teacher ratio by town"/>
+        <br/><br/>
+        <b><label>LSTAT:</label></b>
+        <input type="text" name="LSTAT" size="50" placeholder="% lower status of the population"/>
+        <br/><br/>
+
+        <input type="submit" value="Get House Price"/>
+        <input type="reset"/> 
+        <br/><br/>
+    
+    <h2><b>The price of the House for above selected features will be {{PREDICTEDHOUSEPRICE}} $/-</b></h2>
+    </form>
+</body>
+</html>
+
